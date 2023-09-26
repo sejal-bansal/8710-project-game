@@ -3,11 +3,11 @@ Memory Game
 
   
 
-[Link to Live Website]()
+<!-- [Link to Live Website]() -->
 
   
 
-[GitHub Repo]() 
+<!-- [GitHub Repo]()  -->
 
   
 
