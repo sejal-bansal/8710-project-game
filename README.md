@@ -1,13 +1,13 @@
-# Motaz Abdou - Milestone Project 2 - Memory Game
+# 8710 Project - Foundations of Software Engineering 
 Memory Game  
 
   
 
-[Link to Live Website](https://motazabdou.github.io/MS2-MemoryGame/)
+[Link to Live Website]()
 
   
 
-[GitHub Repo](https://github.com/motazabdou/MS2-MemoryGame) 
+[GitHub Repo]() 
 
   
 
@@ -32,7 +32,7 @@ Memory Game
 
 ## About   
 
-This is a simple Memory Game Web Application created for my second Milestone project with Code Institute. The game is designed to test a user's memory and is made up of a deck of cards, each card containing an image assigned randomly. The goal is to click on a card to reveal the image behind it, memorise the card containing that image and match cards with similar images until all 8 pairs are matched.
+This is a simple Memory Game Web Application created as part of our Foundations of Software Engineering coursework. The game is designed to test a user's memory and is made up of a deck of cards, each card containing an image assigned randomly. The goal is to click on a card to reveal the image behind it, memorise the card containing that image and match cards with similar images until all 8 pairs are matched.
 
 <p align="center">
    <img src="images/appScreenshot.png" alt="screenshot of memory game"/>
@@ -139,7 +139,7 @@ Fonts used were Exo 2 and quicksand as they are very readable and game-friendly,
 
 ***
 
-## User Stories
+<!-- ## User Stories
 As a user, I would like to:
 
 * See a visually appealing, intuitive, challenging, fun game!
@@ -151,7 +151,7 @@ As a user, I would like to:
 * Know the number of moves I have made so far and how long it has been since I started the game.
 * Get confirmation and performance feedback when the game is finished.
 * Grading system to encourage the user to try to beat own score (eg. success, pass, fail)
-* Have the option to play again, and reset card deck.
+* Have the option to play again, and reset card deck. -->
 
 ***
 
@@ -159,7 +159,7 @@ As a user, I would like to:
 ### Existing features
 #### Home
 * Intuitve instructions modal.
-* Call to action: Encourage the user to take action. In the case of the home page, start the game.
+<!-- * Call to action: Encourage the user to take action. In the case of the home page, start the game. -->
 
 #### Game page
 * Game cards: clickable, and turn on click.
@@ -217,9 +217,9 @@ As a backup to using Chrome developer tools to check for responsiveness across m
 
 ***
 
-## Deployment
+<!-- ## Deployment -->
 
-### GitHub Pages
+<!-- ### GitHub Pages
 
 To publish the website:
 
@@ -227,10 +227,10 @@ To publish the website:
 * Go to 'Settings'.
 * Scroll down until you see 'GitHub Pages'.
 * Under GitHub pages, click on the dropdown under 'Source' and select the 'Master Branch' option.
-* A green box should appear with the following message 'Your site is published at https://motazabdou.github.io/MS2-MemoryGame/'.
+* A green box should appear with the following message 'Your site is published at https://motazabdou.github.io/MS2-MemoryGame/'. -->
 
 
-### Cloning a Repository
+<!-- ### Cloning a Repository
 
 To clone the website from within your IDE:
 
@@ -239,7 +239,7 @@ To clone the website from within your IDE:
 * Open the command line in your IDE.
 * Navigate to the directory where you want to clone the project.
 * Type 'git clone' followed by the copied URL: paste it right after 'git clone'.
-* Press 'Enter' and the local clone will be created
+* Press 'Enter' and the local clone will be created -->
 
 ***
 
