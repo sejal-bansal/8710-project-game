@@ -11,7 +11,7 @@ Memory Game
 
   
 
-***  
+<!-- ***   -->
 
 <!-- ## Index – Table of Contents 
 
@@ -26,7 +26,7 @@ Memory Game
 * [Deployment](#deployment) 
 * [Acknowledgements](#credits) -->
 
-***
+<!-- *** -->
 
   
 
@@ -34,9 +34,9 @@ Memory Game
 
 This is a simple Memory Game Web Application created as part of our Foundations of Software Engineering coursework. The game is designed to test a user's memory and is made up of a deck of cards, each card containing an image assigned randomly. The goal is to click on a card to reveal the image behind it, memorise the card containing that image and match cards with similar images until all 8 pairs are matched.
 
-<p align="center">
+<!-- <p align="center">
    <img src="images/appScreenshot.png" alt="screenshot of memory game"/>
-</p>
+</p> -->
 
 <!--  ## Challenge
  
@@ -137,7 +137,7 @@ Fonts used were Exo 2 and quicksand as they are very readable and game-friendly,
 
 * A function that handles clicked cards, applies flip animation, plays audio, reveals backface and adds card content to openedCards array. -->
 
-***
+<!-- *** -->
 
 <!-- ## User Stories
 As a user, I would like to:
@@ -153,7 +153,7 @@ As a user, I would like to:
 * Grading system to encourage the user to try to beat own score (eg. success, pass, fail)
 * Have the option to play again, and reset card deck. -->
 
-***
+<!-- *** -->
 
 <!-- ## Features
 ### Existing features
@@ -215,7 +215,7 @@ JSHint has returned back 51 warnings, however no problems with logic or syntax. 
 
 As a backup to using Chrome developer tools to check for responsiveness across multiple devices, I have also used http://ami.responsivedesign.is and was very pleased with the outcome, and the game layout across various screen sizes. -->
 
-***
+<!-- *** -->
 
 <!-- ## Deployment -->
 
@@ -241,7 +241,7 @@ To clone the website from within your IDE:
 * Type 'git clone' followed by the copied URL: paste it right after 'git clone'.
 * Press 'Enter' and the local clone will be created -->
 
-***
+<!-- *** -->
 
 <!-- ## Credits
 
