@@ -13,7 +13,7 @@ Memory Game
 
 ***  
 
-## Index – Table of Contents 
+<!-- ## Index – Table of Contents 
 
 * [About](#About)
 * [Game Layout](#Game-Layout) 
@@ -24,7 +24,7 @@ Memory Game
 * [Technologies Used](#technologies-used) 
 * [Testing](#testing) 
 * [Deployment](#deployment) 
-* [Acknowledgements](#credits)
+* [Acknowledgements](#credits) -->
 
 ***
 
@@ -38,7 +38,7 @@ This is a simple Memory Game Web Application created as part of our Foundations 
    <img src="images/appScreenshot.png" alt="screenshot of memory game"/>
 </p>
 
- ## Challenge
+<!--  ## Challenge
  
  The challenge is to match all the cards in as little time as possible, making the fewest selections possible
 
@@ -135,7 +135,7 @@ Fonts used were Exo 2 and quicksand as they are very readable and game-friendly,
 
 * A Win-game function that displays the win-game modal when game is completed, and calls the stats function and stoptimer function.
 
-* A function that handles clicked cards, applies flip animation, plays audio, reveals backface and adds card content to openedCards array.
+* A function that handles clicked cards, applies flip animation, plays audio, reveals backface and adds card content to openedCards array. -->
 
 ***
 
@@ -155,13 +155,13 @@ As a user, I would like to:
 
 ***
 
-## Features
+<!-- ## Features
 ### Existing features
 #### Home
-* Intuitve instructions modal.
+* Intuitve instructions modal. -->
 <!-- * Call to action: Encourage the user to take action. In the case of the home page, start the game. -->
 
-#### Game page
+<!-- #### Game page
 * Game cards: clickable, and turn on click.
 * Game logic: in case there is a match, the cards animate and remain visible.
 * Moves counter: after each move (when two cards turned) the counter updates.
@@ -213,7 +213,7 @@ JSHint has returned back 51 warnings, however no problems with logic or syntax. 
 
 ### Responsiveness
 
-As a backup to using Chrome developer tools to check for responsiveness across multiple devices, I have also used http://ami.responsivedesign.is and was very pleased with the outcome, and the game layout across various screen sizes.
+As a backup to using Chrome developer tools to check for responsiveness across multiple devices, I have also used http://ami.responsivedesign.is and was very pleased with the outcome, and the game layout across various screen sizes. -->
 
 ***
 
@@ -243,7 +243,7 @@ To clone the website from within your IDE:
 
 ***
 
-## Credits
+<!-- ## Credits
 
 * [W3C schools](https://www.w3schools.com/)
 * [Mozilla Developer Networks](https://developer.mozilla.org/en-US/)
@@ -254,4 +254,4 @@ To clone the website from within your IDE:
 * [Sandra Israel's Memory game process for inspiration](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-what-is-the-memory-game) 
 * Flip Cards based on [W3C flip card tutorial](https://www.w3schools.com/howto/howto_css_flip_card.asp)
 * [SVG Backgrounds](https://www.svgbackgrounds.com/) for free customisable SVG Backgrounds.
-* [CSS gradient generator](https://cssgradient.io/)
+* [CSS gradient generator](https://cssgradient.io/) -->
