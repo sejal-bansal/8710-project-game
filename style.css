@@ -228,7 +228,7 @@ header {
 
 .card {
   background: #09490b;
-  background-image: url("images/chick.svg");
+  background-image: url("images/Pumpkin.svg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 40%;
@@ -245,7 +245,7 @@ header {
 
 .card:hover {
   background: #0d6610;
-  background-image: url("images/chick.svg");
+  background-image: url("images/Pumpkin.svg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 40%;
@@ -266,7 +266,7 @@ border: none;
 }
 
 .flip img {
-background: transparent;
+background: #daf106; /*changed to yellow so card is visible */
 visibility: visible;
 }
 
