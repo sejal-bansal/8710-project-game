@@ -391,4 +391,4 @@ window.addEventListener("DOMContentLoaded", function() {
     resetEverything();
   });
 
-});
+}); 
