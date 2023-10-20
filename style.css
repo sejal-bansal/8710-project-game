@@ -9,7 +9,7 @@
 body {
   font-family: "Quicksand", cursive;
   background-color: #0e0502;
-  background-image: url("images/Sun-Tornado.svg");
+  background-image: "Halloween.jpg" ;
   background-attachment: fixed;
   background-size: cover;
 }
@@ -64,6 +64,75 @@ body {
 }
 
 /***** home.html *****/
+
+.Easy {
+  border-radius: 40px;
+  text-decoration: none;
+  width: 200px;
+  margin: 20px auto;
+  border: none;
+  color: black;
+  background: rgb(226,99,32);
+  background: linear-gradient(0deg, rgba(232, 87, 9, 0.498) 0%, rgba(232, 87, 9, 0.498) 100%);
+  box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+  padding: 12px;
+  cursor: pointer;
+  outline: none;
+  font-family: "Exo 2", sans-serif;
+  display: block;
+}
+
+.Medium {
+  border-radius: 40px;
+  text-decoration: none;
+  width: 200px;
+  margin: 20px auto;
+  border: none;
+  color: black;
+  background: rgb(226,99,32);
+  background: linear-gradient(0deg, rgba(232, 87, 9, 0.498) 0%, rgba(232, 87, 9, 0.498) 100%);
+  box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+  padding: 12px;
+  cursor: pointer;
+  outline: none;
+  font-family: "Exo 2", sans-serif;
+  display: block;
+}
+
+.Hard {
+  border-radius: 40px;
+  text-decoration: none;
+  width: 200px;
+  margin: 20px auto;
+  border: none;
+  color: black;
+  background: rgb(231, 204, 6);
+  background: linear-gradient(0deg, rgba(151, 223, 7, 0.498) 0%, rgba(222, 212, 13, 0.498) 100%);
+  box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+  padding: 12px;
+  cursor: pointer;
+  outline: none;
+  font-family: "Exo 2", sans-serif;
+  display: block;
+}
+
+.Home-Heading {
+  border-radius: 40px;
+  text-decoration: none;
+  width: 400px;
+  margin: 20px auto;
+  border: none;
+  color: black;
+  background: rgb(226,99,32);
+  background: linear-gradient(0deg, rgb(165, 137, 13) 0%, gold 100%);
+  box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+  padding: 15px;
+  cursor: pointer;
+  outline: none;
+  font-family: "Exo 2", sans-serif;
+  text-align: center;
+ 
+}
 
 #container {
   display: grid;
@@ -161,18 +230,23 @@ header {
 }
 
 /*** Buttons ***/
-.btn {
-  border-radius: 40px;
-  border: none;
-  color: black;
-  background: rgb(226,99,32);
-  background: linear-gradient(0deg, rgb(165, 137, 13) 0%, gold 100%);
+.deck {
+  grid-area: deck;
+  background: linear-gradient(to bottom, #88ebb3, #04b536);
+  border-radius: 2em;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Adjust the number of columns */
+  grid-auto-rows: 1fr; /* Ensure all rows have the same size */
+  grid-gap: 15px;
+  align-items: center;
+  justify-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
   box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
-  padding: 12px;
-  cursor: pointer;
-  outline: none;
-  font-family: "Exo 2", sans-serif;
 }
+
 
 .btn:hover, .start:hover {
   background: linear-gradient(0deg, rgb(4, 93, 7) 0%, #04b536 100%);
@@ -208,19 +282,20 @@ header {
 .deck {
   grid-area: deck;
   background: linear-gradient(to bottom, #88ebb3, #04b536);
-  border-radius: 1.5em;
+  border-radius: 2em;
   display: grid;
   grid-template-columns: repeat(4, auto);
-  grid-template-rows: repeat(4, auto);
-  grid-template-areas: "card card card card"
-  "card card card card"
-  "card card card card"
-  "card card card card";
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: "card card card card card"
+  "card card card card card"
+  "card card card card card"
+  "card card card card card"
+  "card card card card card";
   align-items: center;
   justify-items: center;
   height: 100%;
-  width: 60%;
-  grid-gap: 15px;
+  width: 70%;
+  grid-gap: 20px;
   padding: 20px;
   box-sizing: border-box;
   box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
@@ -231,11 +306,11 @@ header {
   background-image: url("images/Pumpkin.svg");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 40%;
+  background-size: contain;
   border-radius: 0.5em;
   border: solid 0.1px rgb(204, 204, 204);
-  width: 100%;
-  height: 100%;
+  width: 70%;
+  height: 80px;
   display: grid;
   align-items: center;
   justify-items: center;
