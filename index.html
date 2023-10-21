@@ -15,15 +15,24 @@
 <body>
 
     <div class="outer-container-home">
-        <div class="inner-container-home">
-            <h2>How To Play</h2>
-            <img class="home-img" src="images/Pumpkin.svg" alt="image of a chick">
-            <p>- There are 16 cards, 8 matching pairs.</p>
-            <p>- Click on a card to reveal image behind it.</p>
-            <p>- Match the 8 pairs of cards in as few moves and as little time as possible</p>
-            <a class="start" href="home.html">Start Game</a>
+    <div class="inner-container-home">
+        <h2>How To Play</h2>
+        <img class="home-img" src="images/Pumpkin.svg" alt="image of a chick">
+        <p>- There are three levels in the game.</p>
+
+        <!-- Added buttons -->
+        <div class="level-buttons">
+            <button class="level" onclick="location.href='easy.html'">Easy</button>
+            <button class="level" onclick="location.href='medium.html'">Medium</button>
+            <button class="level" onclick="location.href='hard.html'">Hard</button>
+
         </div>
+        <p>- Click on a card to reveal the image behind it.</p>
+        <p>- Match all the pairs of cards in as few moves and as little time as possible to win the game</p>
+        <a class="start" href="easy.html">Start Game</a>
     </div>
+</div>
+
     
 </body>
 </html>
