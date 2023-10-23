@@ -303,7 +303,7 @@ header {
 
 .card {
   background: #09490b;
-  background-image: url("images/Pumpkin.svg");
+  background-image: url("images/pumpkin.svg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -320,7 +320,7 @@ header {
 
 .card:hover {
   background: #0d6610;
-  background-image: url("images/Pumpkin.svg");
+  background-image: url("images/pumpkin.svg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 40%;
@@ -332,7 +332,7 @@ header {
 }
 
 .flip {
-background: #000000;
+background: #daf106; /*changed to yellow so card is visible */;
 cursor: default;
 transform: rotateY(180deg);
 transition: transform 0.3s linear;

@@ -2,8 +2,8 @@ window.addEventListener("DOMContentLoaded", function() {
   // declaring some global variables
 
   // array of images to be stored in the individual cards
-  const deckCards = ["Hand.png", "BucketPumpkin.png", "Cat.png", "Candy2.png", "Ghost.png", "Hat.png", "Potion.png", "Bat.png",
-  "Hand.png", "BucketPumpkin.png", "Cat.png", "Candy2.png", "Ghost.png", "Hat.png", "Potion.png", "Bat.png"
+  const deckCards = ["bat.png", "bucketpumpkin.png", "cat.png", "candy2.png", "ghost.png", "hat.png", "potion.png", "bat.png",
+  "hand.png", "bucketpumpkin.png", "cat.png", "candy2.png", "ghost.png", "hat.png", "potion.png", "bat.png"
 ];
 
   // selecting <ul> with class of deck
