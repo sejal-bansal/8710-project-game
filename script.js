@@ -1,9 +1,15 @@
 window.addEventListener("DOMContentLoaded", function() {
   // declaring some global variables
-
+const overlay = document.getElementById('darkeningOverlay');
+    
+    setInterval(() => {
+        // Toggle the flash class every 10 seconds (change as desired)
+        overlay.classList.toggle('flash');
+    }, 5000);
   // array of images to be stored in the individual cards
-  const deckCards = ["Hand.png", "BucketPumpkin.png", "Cat.png", "Candy2.png", "Ghost.png", "Hat.png", "Potion.png", "Bat.png",
-  "Hand.png", "BucketPumpkin.png", "Cat.png", "Candy2.png", "Ghost.png", "Hat.png", "Potion.png", "Bat.png"
+  const deckCards = ["hand.png", "candy.png","bucketPumpkin.png", "cat.png", "candy2.png", "ghost.png",
+   "hat.png", "skull1.png", "bat.png","mexicanskull.png","moon.png","mummy.png","hand.png","candy.png", "bucketPumpkin.png", "cat.png", 
+   "candy2.png", "ghost.png", "hat.png", "skull1.png", "bat.png","mexicanskull.png","moon.png","mummy.png"
 ];
 
   // selecting <ul> with class of deck
@@ -64,39 +70,39 @@ window.addEventListener("DOMContentLoaded", function() {
     return arr;
   }
 
-  function startGame() {
-    // Invoke shuffle function created earlier and store in variable
-    const shuffledDeck = shuffle(deckCards);
-
-    // Iterate over deck of cards array
-    for (let i = 0; i < shuffledDeck.length; i++) {
-      // at each iteration, create a <li> tag
-      const liTag = document.createElement("li");
-      // Give <li> class of card
-      liTag.classList.add("card");
-      // Create an <img> tag
-      const addImage = document.createElement("img");
-      // Append <img> to <li> tag
-      liTag.appendChild(addImage);
-      // Set the img src path with the shuffled deck
-      addImage.setAttribute("src", "images/" + shuffledDeck[i]);
-      // Add an alt tag to the image
-      addImage.setAttribute("alt", `Image of ${shuffledDeck[i]}`);
-      // Append the new <li> tag to the deck
-      deck.appendChild(liTag);
+    function startGame() {
+      // Invoke shuffle function created earlier and store in variable
+      const shuffledDeck = shuffle(deckCards);
+  
+      // Iterate over deck of cards array
+      for (let i = 0; i < shuffledDeck.length; i++) {
+        // at each iteration, create a <li> tag
+        const liTag = document.createElement("li");
+        // Give <li> class of card
+        liTag.classList.add("card");
+        // Create an <img> tag
+        const addImage = document.createElement("img");
+        // Append <img> to <li> tag
+        liTag.appendChild(addImage);
+        // Set the img src path with the shuffled deck
+        addImage.setAttribute("src", "images/" + shuffledDeck[i]);
+        // Add an alt tag to the image
+        addImage.setAttribute("alt", `Image of ${shuffledDeck[i]}`);
+        // Append the new <li> tag to the deck
+        deck.appendChild(liTag);
+      }
+  
+      let cards = document.getElementsByClassName("card");
+      for (let i = 0; i < cards.length; i++) {
+        cards[i].addEventListener("click", function() {
+          let flip = new Audio("sounds/flip.mp3");
+          flip.play();
+        });
+      }
+  
     }
-
-    let cards = document.getElementsByClassName("card");
-    for (let i = 0; i < cards.length; i++) {
-      cards[i].addEventListener("click", function() {
-        let flip = new Audio("sounds/flip.mp3");
-        flip.play();
-      });
-    }
-
-  }
-
-  startGame();
+  
+    startGame();
 
   // create a function that removes cards. Function will be called upon reset
   function removeCard() {
