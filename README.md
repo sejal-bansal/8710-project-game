@@ -1,5 +1,6 @@
 # 8710 Project - Foundations of Software Engineering 
-Witchy Pairings
+<p style="font-family: 'Chiller', 'Times New Roman', serif; font-size: 30px; color: #ff4500; text-align: center; text-shadow: 2px 2px 4px #000000;">Witchy Pairings</p>
+
 
   
 
@@ -37,7 +38,7 @@ This is a simple Memory Game Web Application based on Halloween theme called "Wi
    <img src="images/appScreenshot.jpeg" alt="screenshot of memory game"/>
 </p>
 
- ## Challenge
+## Challenge
  
  The challenge is to match all the cards in as little time as possible, making the fewest selections possible
 
@@ -231,7 +232,7 @@ To publish the website:
 * [CSS gradient generator](https://cssgradient.io/)
 * [Game reference](https://github.com/motazabdou/MS2-MemoryGame)
 
-## Credits
+## Authors
 * [Sejal Bansal](https://github.com/sejal-bansal)
 * [Carolina Liskey](https://github.com/carolinaliskey)
 * [Varshitha Bonguluru](https://github.com/Varshitha0)
