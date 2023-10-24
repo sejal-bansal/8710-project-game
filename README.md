@@ -1,7 +1,7 @@
 # 8710 Project - Foundations of Software Engineering 
 <p style="font-family: 'Chiller', 'Times New Roman', serif; font-size: 30px; color: #ff4500; text-align: center; text-shadow: 2px 2px 4px #000000;">Witchy Pairings</p>
 
-<!-- [Link to Live Website]() -->
+[Link to Live Website](https://witchy-pairings.netlify.app)
 
   
 
@@ -18,8 +18,6 @@
 * [User Stories](#user-stories)
 * [Features](#features) 
 * [Technologies Used](#technologies-used) 
-* [Testing](#testing) 
-* [Deployment](#deployment) 
 * [Acknowledgements](#credits)
 * [Authors](#authors)
 
@@ -201,19 +199,6 @@ As a user, I would like to:
 As a backup to using Chrome developer tools to check for responsiveness across multiple devices, I have also used http://ami.responsivedesign.is and was very pleased with the outcome, and the game layout across various screen sizes. -->
 
 <!-- *** -->
-
-<!-- ## Deployment -->
-
-<!-- ### GitHub Pages
-
-To publish the website:
-
-* Open GitHub and go to your site's 'Repositories'.
-* Go to 'Settings'.
-* Scroll down until you see 'GitHub Pages'.
-* Under GitHub pages, click on the dropdown under 'Source' and select the 'Master Branch' option.
-* A green box should appear with the following message 'Your site is published at https://motazabdou.github.io/MS2-MemoryGame/'. -->
-
 
 ## Credits
 
