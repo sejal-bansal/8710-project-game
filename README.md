@@ -1,9 +1,6 @@
 # 8710 Project - Foundations of Software Engineering 
 <p style="font-family: 'Chiller', 'Times New Roman', serif; font-size: 30px; color: #ff4500; text-align: center; text-shadow: 2px 2px 4px #000000;">Witchy Pairings</p>
 
-
-  
-
 <!-- [Link to Live Website]() -->
 
   
@@ -146,15 +143,15 @@ Fonts used were Exo 2 and quicksand as they are very readable and game-friendly,
 As a user, I would like to:
 
 * See a visually appealing, intuitive, challenging, fun game!
-* Be able to be 'competitive' and beat my own scores.
+* I want to be rated based on my performance
 * Click on any card as first card and clicked card should turn.
 * Click any card as second card and clicked card should turn.
-* Be given rewarding feedback when cards match (colour change and sound feedback) and cards remain visible.
-* See cards flip back when there is no match, and be given feedback to indicate no match.
-* Know the number of moves I have made so far and how long it has been since I started the game.
-* Get confirmation and performance feedback when the game is finished.
-* Grading system to encourage the user to try to beat own score (eg. success, pass, fail)
-* Have the option to play again, and reset card deck.
+* Want to restart the game at any time.
+* Want the game to be responsive so I can play on both mobile and desktop devices..
+* The game to have a Halloween theme to match the title
+* Get confirmation and performance feedback when the game is completed.
+* Want to play at different difficulty levels.
+* See a main menu so that I can choose to start the game or view instructions
 
 <!-- *** -->
 
