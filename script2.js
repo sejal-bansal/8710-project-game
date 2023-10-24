@@ -1,3 +1,4 @@
+//Script file for Hard Level
 window.addEventListener("DOMContentLoaded", function() {
     // declaring some global variables
   
@@ -10,11 +11,9 @@ window.addEventListener("DOMContentLoaded", function() {
   // array of images to be stored in the individual cards
   const deckCards = ["hand.png", "candy.png","bucketPumpkin.png", "cat.png", "candy2.png", "ghost.png",
    "hat.png", "skull1.png", "bat.png","mexicanskull.png","moon.png","mummy.png","witch.png","skull2.png","spider.png",
-   "web.png",
-   "hand.png","candy.png", "bucketPumpkin.png", "cat.png", "candy2.png", "ghost.png", "hat.png", "skull1.png", 
+   "web.png", "hand.png","candy.png", "bucketPumpkin.png", "cat.png", "candy2.png", "ghost.png", "hat.png", "skull1.png", 
    "bat.png","mexicanskull.png","moon.png","mummy.png","witch.png","skull2.png","spider.png","web.png",
-   "vampire.png","tree.png","tree2.png","spiders.png","vampire.png","tree.png","tree2.png","spiders.png"
-];
+   "vampire.png","tree.png","tree2.png","spiders.png","vampire.png","tree.png","tree2.png","spiders.png" ];
   
     // selecting <ul> with class of deck
     const deck = document.querySelector(".deck");
