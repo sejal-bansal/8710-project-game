@@ -10,7 +10,6 @@
 
 * [About](#About)
 * [Game Layout](#Game-Layout) 
-<!-- * [Game Requirements](#Game-Requirements) -->
 * [Logic](#Game-Logic)
 * [User Stories](#user-stories)
 * [Features](#features) 
@@ -268,8 +267,7 @@ We used to have our stand up meetings every Monday at 6:00pm, where we discussed
 
 ## What didn’t work:
 * One of the notable challenges was managing scope. Initially, the project aimed for a wide range of features, but it became apparent that some elements needed to be scaled back or postponed to ensure a timely release.
-* Learning to prioritize features and focus on the core gameplay mechanics would have streamlined the development process.
-* Our game is compatible across Google Chrome and Safari browser only. 
+* Learning to prioritize features and focus on the core gameplay mechanics would have streamlined the development process. 
 
 ## Lessons learned:
 * The development of the Matching Blocks game taught me several valuable lessons. Firstly, the importance of simplicity cannot be overstated. A straightforward and intuitive gameplay mechanic often leads to the most enjoyable games. Complexity should arise from mastering simple rules, providing depth without overwhelming players.
