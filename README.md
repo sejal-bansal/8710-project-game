@@ -10,7 +10,7 @@
 
 * [About](#About)
 * [Game Layout](#Game-Layout) 
-* [Game Requirements](#Game-Requirements)
+<!-- * [Game Requirements](#Game-Requirements) -->
 * [Logic](#Game-Logic)
 * [User Stories](#user-stories)
 * [Features](#features) 
@@ -77,7 +77,7 @@ Fonts used were Exo 2 and quicksand as they are very readable and game-friendly,
 
 ***
 
-## Game Requirements
+<!-- ## Game Requirements
 
 * On load or restart, the cards must be shuffled and a random array of images is to be generated.
 
@@ -103,7 +103,7 @@ Fonts used were Exo 2 and quicksand as they are very readable and game-friendly,
 
 * Win game modal needs to have the option to ask the user to play again.
 
-***
+*** -->
  
 ## Game Logic 
 
@@ -256,7 +256,7 @@ We used to have our stand up meetings every Monday at 6:00pm, where we discussed
 * Technical challenges also emerged during the development process. Implementing smooth animations, responsive touch controls, and efficient collision detection required careful coding and constant iteration.
 * Compatibility issues across different devices and operating systems demanded extensive testing and optimization, adding complexity to the development process.
 
-# What worked:
+## What worked:
 * A key success factor was the iterative development approach. Starting with a basic prototype allowed for rapid experimentation and testing of various gameplay ideas. Feedback from playtesting sessions played a vital role in refining the mechanics and overall game experience. Iterative testing and feedback helped in identifying and rectifying issues early, ensuring a polished end product.
 * Conducting regular zoom calls to discuss the ideas and to implement them made it easier for everyone to follow the flow. Documenting every stage of the project and creating user stories gave us clarity regarding the work which has been done.
 * Additionally, establishing a clear art style and consistent visual design contributed significantly to the game's appeal. Creating visually appealing and cohesive graphics enhanced the overall player experience, making the game more engaging and immersive. The sound effects make the user feel the game while playing.
