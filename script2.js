@@ -13,7 +13,7 @@ window.addEventListener("DOMContentLoaded", function() {
    "web.png",
    "hand.png","candy.png", "bucketPumpkin.png", "cat.png", "candy2.png", "ghost.png", "hat.png", "skull1.png", 
    "bat.png","mexicanskull.png","moon.png","mummy.png","witch.png","skull2.png","spider.png","web.png",
-   "vampire.png","tree.png","tree2.png","spiders.png","vampire.png","tree.png","tree2.png","spiders.png", 
+   "vampire.png","tree.png","tree2.png","spiders.png","vampire.png","tree.png","tree2.png","spiders.png"
 ];
   
     // selecting <ul> with class of deck
@@ -182,14 +182,14 @@ window.addEventListener("DOMContentLoaded", function() {
     /* Create a function that updates the star rating depending on the number of moves the player has made to complete the Game
     the number of starts will decrease the more moves a player makes. */
     function starRating() {
-      if (moves === 16) {
+      if (moves === 40) {
         // First element child is the <i> within the <li>
         star[2].firstElementChild.classList.remove("fa-star");
         starCount--;
         document.querySelectorAll(".star")[0].style.animation = "stars-pulse 1s";
         document.querySelectorAll(".star")[1].style.animation = "stars-pulse 1s";
       }
-      if (moves === 19) {
+      if (moves === 42) {
         star[1].firstElementChild.classList.remove("fa-star");
         starCount--;
         document.querySelector(".star").style.animation = "stars-pulse 1s";
@@ -340,7 +340,7 @@ window.addEventListener("DOMContentLoaded", function() {
     Stop the timer update the modal with stats and show the modal. */
   
     function winGame() {
-      if (matched.length === 16) {
+      if (matched.length === 40) {
         stopTime();
         AddStats();
   

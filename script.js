@@ -393,8 +393,7 @@ const overlay = document.getElementById('darkeningOverlay');
   reset.addEventListener('click', resetEverything);
 
   playAgain.addEventListener('click', function() {
-    modal.style.display = "none";
-    resetEverything();
+    window.location.href = "index.html";
   });
 
 }); 

@@ -536,8 +536,8 @@ background: transparent;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgb(46, 61, 73);
-  background-color: rgba(46, 61, 73, 0.6);
+  background-color: rgb(46, 61, 73, 0.9);
+/*  background-color: rgba(46, 61, 73, 0.6);*/
   justify-items: center;
   align-items: center;
 }
@@ -554,16 +554,40 @@ background: transparent;
   width: 90%;
   height: 90%;
   position: relative;
+  background-image: url('images/game-win.jpeg');
+  background-size: cover;       s
+  background-position: center;  /* Centers the background image */
+  background-repeat: no-repeat; /
+  background-color: rgba(0, 0, 0, 0.6); 
+
 }
 
-.modal p {
-  margin: 5px 0;
+.modal h2, .modal p {
+  font-family: 'Creepster', cursive;
+  color: #fc4; /* A spooky color */
+  text-shadow: 2px 2px 4px #000; /* Add shadow to the text */
+  margin: 10px 0;
   text-align: center;
 }
 
+.modal h2 {
+    font-size: 36px;
+    font-family: 'Creepster', cursive;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #FF4500;
+    letter-spacing: 2px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 5px;
+    line-height: 1.5;
+}
+
+.modal p{
+  font-size: 24px;
+}
+
 .modal-img {
-  width: 20%;
-  margin: 15px 0;
+  display: none;
 }
 
 .fa-check-circle {
@@ -579,6 +603,22 @@ background: transparent;
 .fa-times-circle {
   color: red;
   margin: 0 5px;
+}
+
+.btn.play-again-btn {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fc4;
+  border: 2px solid #fc4;
+  padding: 10px 20px;
+  font-family: 'Creepster', cursive;
+  text-shadow: 2px 2px 4px #000;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn.play-again-btn:hover {
+  background-color: #fc4;
+  color: #000;
 }
 
 /*** Animations ***/
