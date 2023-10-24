@@ -15,8 +15,13 @@
 * [User Stories](#user-stories)
 * [Features](#features) 
 * [Technologies Used](#technologies-used) 
-* [Testing](#testing) 
+* [Deployment](#testing) 
 * [Acknowledgements](#credits)
+* [Reflection](#reflection)
+* [Challenges Faced](#Challenges-Faced)
+* [What Worked](#What-Worked)
+* [What didn’t work](#What-didn’t-work)
+* [Lessons Learned:](#Lessons-Learned)
 * [Authors](#authors)
   
 
@@ -197,6 +202,10 @@ As a user, I would like to:
 
 As a backup to using Chrome developer tools to check for responsiveness across multiple devices, I have also used http://ami.responsivedesign.is and was very pleased with the outcome, and the game layout across various screen sizes. -->
 
+<p align="center">
+   <img src="images/responsive.jpeg" alt="screenshot of memory game"/>
+</p>
+
 <!-- *** -->
 
 ## Setup Instructions for Local:
@@ -251,7 +260,8 @@ We used to have our stand up meetings every Monday at 6:00pm, where we discussed
 * A key success factor was the iterative development approach. Starting with a basic prototype allowed for rapid experimentation and testing of various gameplay ideas. Feedback from playtesting sessions played a vital role in refining the mechanics and overall game experience. Iterative testing and feedback helped in identifying and rectifying issues early, ensuring a polished end product.
 * Conducting regular zoom calls to discuss the ideas and to implement them made it easier for everyone to follow the flow. Documenting every stage of the project and creating user stories gave us clarity regarding the work which has been done.
 * Additionally, establishing a clear art style and consistent visual design contributed significantly to the game's appeal. Creating visually appealing and cohesive graphics enhanced the overall player experience, making the game more engaging and immersive. The sound effects make the user feel the game while playing.
-What didn’t work:
+
+## What didn’t work:
 * One of the notable challenges was managing scope. Initially, the project aimed for a wide range of features, but it became apparent that some elements needed to be scaled back or postponed to ensure a timely release.
 * Learning to prioritize features and focus on the core gameplay mechanics would have streamlined the development process.
 * Our game is compatible across Google Chrome and Safari browser only. 
