@@ -30,7 +30,7 @@
 This is a simple Memory Game Web Application based on Halloween theme called "Witchy Pairings", created as part of our Foundations of Software Engineering coursework. The game is designed to test a user's memory and is made up of a deck of cards, each card containing an image assigned randomly. The goal is to click on a card to reveal the image behind it, memorise the card containing that image and match cards with similar images until all the pairs are matched.
 
 <p align="center">
-   <img src="images/start.jpeg" alt="screenshot of memory game"/>
+   <img src="images/Start.jpeg" alt="screenshot of memory game"/>
 </p>
 
 
