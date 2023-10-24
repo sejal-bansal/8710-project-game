@@ -30,8 +30,9 @@
 This is a simple Memory Game Web Application based on Halloween theme called "Witchy Pairings", created as part of our Foundations of Software Engineering coursework. The game is designed to test a user's memory and is made up of a deck of cards, each card containing an image assigned randomly. The goal is to click on a card to reveal the image behind it, memorise the card containing that image and match cards with similar images until all the pairs are matched.
 
 <p align="center">
-   <img src="images/appScreenshot.jpeg" alt="screenshot of memory game"/>
+   <img src="images/start.jpeg" alt="screenshot of memory game"/>
 </p>
+
 
 ## Challenge
  
@@ -61,6 +62,10 @@ This is a simple Memory Game Web Application based on Halloween theme called "Wi
 The index page is made up of a modal that contains instructions on how to play the game, and a Start Game button taking the user to the game page. The user can also click on the level of their choice and play the game. The Start Game button takes users to the default Easy level of the game. The The game is made up of a single page containing a header, a score panel that keeps tabs of performance indicators such as the time, the number of moves and the current star rating of the user, depending on the performance, and also contains the reset button.
 
 The game board is made up of a deck division containing cards based on the level, which were created dynamically in javascript. Each card consists of a front face and a backface. On card hover, the card background lightens up, and on card click, the card flips 180 degrees and reveals the image behind it, which the user then needs to memorise to improve performance. 
+
+<p align="center">
+   <img src="images/appScreenshot.jpeg" alt="screenshot of memory game"/>
+</p>
 
 <!-- The primary colours used in my palette were three shades of green (Emerald, Green Pantone, and lincoln green), two shades of yellow/orange (Orange web & Gold Web) for contrast, on a green & black vector background customized on svgbackgrounds.com. The cards have an image of a vector cartoon animal to convey a more "game" feel, as well as careful choice of multi-coloured vector icons on the backface of the cards to ensure colour diversity while maintaining a tri-coloured theme.  -->
 
