@@ -20,7 +20,7 @@
 * [Challenges Faced](#Challenges-Faced)
 * [What Worked](#What-Worked)
 * [What didn’t work](#What-didn’t-work)
-* [Lessons Learned:](#Lessons-Learned)
+* [Lessons Learned](#Lessons-Learned)
 * [Authors](#authors)
   
 
