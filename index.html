@@ -4,10 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>MS2 - Memory Game</title>
+        <title>Witchy Pairings</title>
         <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/52177094a7.js" crossorigin="anonymous"></script>
         <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/favicon.ico">
+        <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Nosifer&display=swap" rel="stylesheet">
         <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="images/favicon//favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
@@ -15,15 +16,26 @@
 <body>
 
     <div class="outer-container-home">
-        <div class="inner-container-home">
-            <h2>How To Play</h2>
-            <img class="home-img" src="images/Pumpkin.svg" alt="image of a chick">
-            <p>- There are 16 cards, 8 matching pairs.</p>
-            <p>- Click on a card to reveal image behind it.</p>
-            <p>- Match the 8 pairs of cards in as few moves and as little time as possible</p>
-            <a class="start" href="home.html">Start Game</a>
+    <div class="inner-container-home">
+        <h1>Witchy Pairings</h1>
+        <h2>How To Play</h2>
+        <img class="home-img" src="images/skeleton-bg.png" alt="image of a skeleton">
+        <p>- You've entered a haunted mansion.</p>
+        <p>- There are three levels in the game.</p>
+
+        <!-- Added buttons -->
+        <div class="level-buttons">
+            <button class="level" onclick="location.href='easy.html'">Easy</button>
+            <button class="level" onclick="location.href='medium.html'">Medium</button>
+            <button class="level" onclick="location.href='hard.html'">Hard</button>
+
         </div>
+        <p>- The only way out is to match the haunted objects before the spirits catch you.</p>
+        <p>- Match all the pairs of cards in as few moves and as little time as possible to win the game</p>
+        <a class="start" href="easy.html">Start Game</a>
     </div>
+</div>
+
     
 </body>
 </html>

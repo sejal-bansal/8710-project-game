@@ -1,12 +1,20 @@
+//Script file for Medium Level
 window.addEventListener("DOMContentLoaded", function() {
     // declaring some global variables
   
-    const deckCards = [
-      "balloon.png", "basketball.png", "cake.png", "camera.png", "car.png",
-      "dog.png", "leprechaun.png", "tree.png", "balloon.png", "basketball.png",
-      "cake.png", "camera.png", "car.png", "dog.png", "leprechaun.png", 
-      "tree.png", "flower.png", "guitar.png", "pizza.png", "rocket.png"
-    ];
+const overlay = document.getElementById('darkeningOverlay');
+    
+    setInterval(() => {
+        // Toggle the flash class every 10 seconds (change as desired)
+        overlay.classList.toggle('flash');
+    }, 5000);
+  // array of images to be stored in the individual cards
+  const deckCards = ["hand.png", "candy.png","bucketPumpkin.png", "cat.png", "candy2.png", "ghost.png",
+   "hat.png", "skull1.png", "bat.png","mexicanskull.png","moon.png","mummy.png","witch.png","skull2.png","spider.png",
+   "web.png",
+   "hand.png","candy.png", "bucketPumpkin.png", "cat.png", "candy2.png", "ghost.png", "hat.png", "skull1.png", 
+   "bat.png","mexicanskull.png","moon.png","mummy.png","witch.png","skull2.png","spider.png","web.png"
+];
     // selecting <ul> with class of deck
     const deck = document.querySelector(".deck");
   
@@ -127,7 +135,7 @@ window.addEventListener("DOMContentLoaded", function() {
       }, 1000);
     }
   
-    // Create a function that stops the timer once all 16 cards are matched.
+    // Create a function that stops the timer once all cards are matched.
     function stopTime() {
       clearInterval(time);
     }
@@ -173,14 +181,14 @@ window.addEventListener("DOMContentLoaded", function() {
     /* Create a function that updates the star rating depending on the number of moves the player has made to complete the Game
     the number of starts will decrease the more moves a player makes. */
     function starRating() {
-      if (moves === 16) {
+      if (moves === 32) {
         // First element child is the <i> within the <li>
         star[2].firstElementChild.classList.remove("fa-star");
         starCount--;
         document.querySelectorAll(".star")[0].style.animation = "stars-pulse 1s";
         document.querySelectorAll(".star")[1].style.animation = "stars-pulse 1s";
       }
-      if (moves === 19) {
+      if (moves === 35) {
         star[1].firstElementChild.classList.remove("fa-star");
         starCount--;
         document.querySelector(".star").style.animation = "stars-pulse 1s";
@@ -326,12 +334,12 @@ window.addEventListener("DOMContentLoaded", function() {
       };
     }
   
-    /* function used Check the length of the matched array and if there are 8 pairs 16 cards 
+    /* function used Check the length of the matched array and if there are all cards
     all together then the game is won.
     Stop the timer update the modal with stats and show the modal. */
   
     function winGame() {
-      if (matched.length === 16) {
+      if (matched.length === 32) {
         stopTime();
         AddStats();
   

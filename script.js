@@ -1,9 +1,15 @@
 window.addEventListener("DOMContentLoaded", function() {
   // declaring some global variables
-
+const overlay = document.getElementById('darkeningOverlay');
+    
+    setInterval(() => {
+        // Toggle the flash class every 10 seconds (change as desired)
+        overlay.classList.toggle('flash');
+    }, 5000);
   // array of images to be stored in the individual cards
-  const deckCards = ["Hand.png", "BucketPumpkin.png", "Cat.png", "Candy2.png", "Ghost.png", "Hat.png", "Potion.png", "Bat.png",
-  "Hand.png", "BucketPumpkin.png", "Cat.png", "Candy2.png", "Ghost.png", "Hat.png", "Potion.png", "Bat.png"
+  const deckCards = ["hand.png", "candy.png","bucketPumpkin.png", "cat.png", "candy2.png", "ghost.png",
+   "hat.png", "skull1.png", "bat.png","mexicanskull.png","moon.png","mummy.png","hand.png","candy.png", "bucketPumpkin.png", "cat.png", 
+   "candy2.png", "ghost.png", "hat.png", "skull1.png", "bat.png","mexicanskull.png","moon.png","mummy.png"
 ];
 
   // selecting <ul> with class of deck
@@ -64,39 +70,39 @@ window.addEventListener("DOMContentLoaded", function() {
     return arr;
   }
 
-  function startGame() {
-    // Invoke shuffle function created earlier and store in variable
-    const shuffledDeck = shuffle(deckCards);
-
-    // Iterate over deck of cards array
-    for (let i = 0; i < shuffledDeck.length; i++) {
-      // at each iteration, create a <li> tag
-      const liTag = document.createElement("li");
-      // Give <li> class of card
-      liTag.classList.add("card");
-      // Create an <img> tag
-      const addImage = document.createElement("img");
-      // Append <img> to <li> tag
-      liTag.appendChild(addImage);
-      // Set the img src path with the shuffled deck
-      addImage.setAttribute("src", "images/" + shuffledDeck[i]);
-      // Add an alt tag to the image
-      addImage.setAttribute("alt", `Image of ${shuffledDeck[i]}`);
-      // Append the new <li> tag to the deck
-      deck.appendChild(liTag);
+    function startGame() {
+      // Invoke shuffle function created earlier and store in variable
+      const shuffledDeck = shuffle(deckCards);
+  
+      // Iterate over deck of cards array
+      for (let i = 0; i < shuffledDeck.length; i++) {
+        // at each iteration, create a <li> tag
+        const liTag = document.createElement("li");
+        // Give <li> class of card
+        liTag.classList.add("card");
+        // Create an <img> tag
+        const addImage = document.createElement("img");
+        // Append <img> to <li> tag
+        liTag.appendChild(addImage);
+        // Set the img src path with the shuffled deck
+        addImage.setAttribute("src", "images/" + shuffledDeck[i]);
+        // Add an alt tag to the image
+        addImage.setAttribute("alt", `Image of ${shuffledDeck[i]}`);
+        // Append the new <li> tag to the deck
+        deck.appendChild(liTag);
+      }
+  
+      let cards = document.getElementsByClassName("card");
+      for (let i = 0; i < cards.length; i++) {
+        cards[i].addEventListener("click", function() {
+          let flip = new Audio("sounds/flip.mp3");
+          flip.play();
+        });
+      }
+  
     }
-
-    let cards = document.getElementsByClassName("card");
-    for (let i = 0; i < cards.length; i++) {
-      cards[i].addEventListener("click", function() {
-        let flip = new Audio("sounds/flip.mp3");
-        flip.play();
-      });
-    }
-
-  }
-
-  startGame();
+  
+    startGame();
 
   // create a function that removes cards. Function will be called upon reset
   function removeCard() {
@@ -126,7 +132,7 @@ window.addEventListener("DOMContentLoaded", function() {
     }, 1000);
   }
 
-  // Create a function that stops the timer once all 16 cards are matched.
+  // Create a function that stops the timer once all 24 cards are matched.
   function stopTime() {
     clearInterval(time);
   }
@@ -172,14 +178,14 @@ window.addEventListener("DOMContentLoaded", function() {
   /* Create a function that updates the star rating depending on the number of moves the player has made to complete the Game
   the number of starts will decrease the more moves a player makes. */
   function starRating() {
-    if (moves === 16) {
+    if (moves === 24) {
       // First element child is the <i> within the <li>
       star[2].firstElementChild.classList.remove("fa-star");
       starCount--;
       document.querySelectorAll(".star")[0].style.animation = "stars-pulse 1s";
       document.querySelectorAll(".star")[1].style.animation = "stars-pulse 1s";
     }
-    if (moves === 19) {
+    if (moves === 30) {
       star[1].firstElementChild.classList.remove("fa-star");
       starCount--;
       document.querySelector(".star").style.animation = "stars-pulse 1s";
@@ -325,12 +331,12 @@ window.addEventListener("DOMContentLoaded", function() {
     };
   }
 
-  /* function used Check the length of the matched array and if there are 8 pairs 16 cards 
+  /* function used Check the length of the matched array and if there are all pairs 
   all together then the game is won.
   Stop the timer update the modal with stats and show the modal. */
 
   function winGame() {
-    if (matched.length === 16) {
+    if (matched.length === 24) {
       stopTime();
       AddStats();
 
@@ -387,8 +393,7 @@ window.addEventListener("DOMContentLoaded", function() {
   reset.addEventListener('click', resetEverything);
 
   playAgain.addEventListener('click', function() {
-    modal.style.display = "none";
-    resetEverything();
+    window.location.href = "index.html";
   });
 
 }); 

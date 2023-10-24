@@ -1,19 +1,15 @@
 # 8710 Project - Foundations of Software Engineering 
-Memory Game  
-
-  
+<p style="font-family: 'Chiller', 'Times New Roman', serif; font-size: 30px; color: #ff4500; text-align: center; text-shadow: 2px 2px 4px #000000;">Witchy Pairings</p>
 
 <!-- [Link to Live Website]() -->
 
   
 
-<!-- [GitHub Repo]()  -->
-
-  
+[GitHub Repo](https://github.com/sejal-bansal/8710-project-game) 
 
 <!-- ***   -->
 
-<!-- ## Index – Table of Contents 
+## Index – Table of Contents 
 
 * [About](#About)
 * [Game Layout](#Game-Layout) 
@@ -24,7 +20,8 @@ Memory Game
 * [Technologies Used](#technologies-used) 
 * [Testing](#testing) 
 * [Deployment](#deployment) 
-* [Acknowledgements](#credits) -->
+* [Acknowledgements](#credits)
+* [Authors](#authors)
 
 <!-- *** -->
 
@@ -32,19 +29,22 @@ Memory Game
 
 ## About   
 
-This is a simple Memory Game Web Application created as part of our Foundations of Software Engineering coursework. The game is designed to test a user's memory and is made up of a deck of cards, each card containing an image assigned randomly. The goal is to click on a card to reveal the image behind it, memorise the card containing that image and match cards with similar images until all 8 pairs are matched.
+This is a simple Memory Game Web Application based on Halloween theme called "Witchy Pairings", created as part of our Foundations of Software Engineering coursework. The game is designed to test a user's memory and is made up of a deck of cards, each card containing an image assigned randomly. The goal is to click on a card to reveal the image behind it, memorise the card containing that image and match cards with similar images until all the pairs are matched.
 
-<!-- <p align="center">
-   <img src="images/appScreenshot.png" alt="screenshot of memory game"/>
-</p> -->
+<p align="center">
+   <img src="images/appScreenshot.jpeg" alt="screenshot of memory game"/>
+</p>
 
-<!--  ## Challenge
+## Challenge
  
  The challenge is to match all the cards in as little time as possible, making the fewest selections possible
 
 *** 
 
 ## Instructions
+* Select the level of your choice (Easy, Medium, Hard)
+
+* Start the game
 
 * Click on a card
 
@@ -52,20 +52,20 @@ This is a simple Memory Game Web Application created as part of our Foundations 
 
 * Match cards properly with less moves and in faster time
 
- ***
+***
 
 ## Game Layout
 
-The index page is made up of a modal that contains instructions on how to play the game, and a button taking the user to the game page. The game itself is made up of a single page containing a header, a score panel that keeps tabs of performance indicators such as the time, the number of moves and the current star rating of the user, depending on the performance, and also contains the reset button.
+The index page is made up of a modal that contains instructions on how to play the game, and a Start Game button taking the user to the game page. The user can also click on the level of their choice and play the game. The Start Game button takes users to the default Easy level of the game. The The game is made up of a single page containing a header, a score panel that keeps tabs of performance indicators such as the time, the number of moves and the current star rating of the user, depending on the performance, and also contains the reset button.
 
-The game board is made up of a deck division containing 16 cards which were created dynamically in javascript. Each card consists of a front face and a backface. On card hover, the card background lightens up slightly, and on card click, the card flips 180 degrees and reveals the image behind it, which the user then needs to memorise to improve performance. 
+The game board is made up of a deck division containing cards based on the level, which were created dynamically in javascript. Each card consists of a front face and a backface. On card hover, the card background lightens up, and on card click, the card flips 180 degrees and reveals the image behind it, which the user then needs to memorise to improve performance. 
 
-The primary colours used in my palette were three shades of green (Emerald, Green Pantone, and lincoln green), two shades of yellow/orange (Orange web & Gold Web) for contrast, on a green & black vector background customized on svgbackgrounds.com. The cards have an image of a vector cartoon animal to convey a more "game" feel, as well as careful choice of multi-coloured vector icons on the backface of the cards to ensure colour diversity while maintaining a tri-coloured theme. 
+<!-- The primary colours used in my palette were three shades of green (Emerald, Green Pantone, and lincoln green), two shades of yellow/orange (Orange web & Gold Web) for contrast, on a green & black vector background customized on svgbackgrounds.com. The cards have an image of a vector cartoon animal to convey a more "game" feel, as well as careful choice of multi-coloured vector icons on the backface of the cards to ensure colour diversity while maintaining a tri-coloured theme.  -->
 
 
-<p align="center">
+<!-- <p align="center">
    <img src="images/palette.png" alt="screenshot of colour palette"/>
-</p>
+</p> -->
 
 A "Win-Game" Modal appears in the center of the screen upon completion of the game, providing feedback concerning grade, star rating and time taken to complete the game.
 
@@ -135,33 +135,33 @@ Fonts used were Exo 2 and quicksand as they are very readable and game-friendly,
 
 * A Win-game function that displays the win-game modal when game is completed, and calls the stats function and stoptimer function.
 
-* A function that handles clicked cards, applies flip animation, plays audio, reveals backface and adds card content to openedCards array. -->
+* A function that handles clicked cards, applies flip animation, plays audio, reveals backface and adds card content to openedCards array.
 
 <!-- *** -->
 
-<!-- ## User Stories
+## User Stories
 As a user, I would like to:
 
 * See a visually appealing, intuitive, challenging, fun game!
-* Be able to be 'competitive' and beat my own scores.
+* I want to be rated based on my performance
 * Click on any card as first card and clicked card should turn.
 * Click any card as second card and clicked card should turn.
-* Be given rewarding feedback when cards match (colour change and sound feedback) and cards remain visible.
-* See cards flip back when there is no match, and be given feedback to indicate no match.
-* Know the number of moves I have made so far and how long it has been since I started the game.
-* Get confirmation and performance feedback when the game is finished.
-* Grading system to encourage the user to try to beat own score (eg. success, pass, fail)
-* Have the option to play again, and reset card deck. -->
+* Want to restart the game at any time.
+* Want the game to be responsive so I can play on both mobile and desktop devices..
+* The game to have a Halloween theme to match the title
+* Get confirmation and performance feedback when the game is completed.
+* Want to play at different difficulty levels.
+* See a main menu so that I can choose to start the game or view instructions
 
 <!-- *** -->
 
-<!-- ## Features
+## Features
 ### Existing features
 #### Home
-* Intuitve instructions modal. -->
-<!-- * Call to action: Encourage the user to take action. In the case of the home page, start the game. -->
+* Intuitve instructions modal.
+* Call to action: Encourage the user to take action. In the case of the home page, start the game.
 
-<!-- #### Game page
+#### Game page
 * Game cards: clickable, and turn on click.
 * Game logic: in case there is a match, the cards animate and remain visible.
 * Moves counter: after each move (when two cards turned) the counter updates.
@@ -174,7 +174,6 @@ As a user, I would like to:
 
 #### Features that can be implemented
 * High all-time board: show all time statistics of all users.
-* More game difficulty modes.
 * Auditory cues to assist memorisation.
 * Timed mode: add a timer to make the game more challenging, i.e. finish game before timer runs out.
 
@@ -197,20 +196,6 @@ As a user, I would like to:
 
 ***
 
-## Testing
-
-### HTML
-
-Both the index and the home pages passed the HTML W3C Markup Validation Service with no errors.
-
-### CSS
-
-Bothe the index and home pages passed the W3C CSS validation Service with no errors shown.
-
-### Javascript
-
-JSHint has returned back 51 warnings, however no problems with logic or syntax. The warnings are all related to the use of the let and const keywords, which is in itself not an issue. JSHint has recommended that those keywords are available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz), and I figured that I needed to tell JSHint that my code uses ECMAScript 6 specific syntax. However not all browsers implement them, so I didn't worry about the JSHint feedback, for as long as there are no logical or syntactical errors.
-
 ### Responsiveness
 
 As a backup to using Chrome developer tools to check for responsiveness across multiple devices, I have also used http://ami.responsivedesign.is and was very pleased with the outcome, and the game layout across various screen sizes. -->
@@ -230,20 +215,7 @@ To publish the website:
 * A green box should appear with the following message 'Your site is published at https://motazabdou.github.io/MS2-MemoryGame/'. -->
 
 
-<!-- ### Cloning a Repository
-
-To clone the website from within your IDE:
-
-* Go to the main page of the GitHub repository and click on the dropdown menu 'Clone or download'.
-* Select 'Clone with HTTPS'.
-* Open the command line in your IDE.
-* Navigate to the directory where you want to clone the project.
-* Type 'git clone' followed by the copied URL: paste it right after 'git clone'.
-* Press 'Enter' and the local clone will be created -->
-
-<!-- *** -->
-
-<!-- ## Credits
+## Credits
 
 * [W3C schools](https://www.w3schools.com/)
 * [Mozilla Developer Networks](https://developer.mozilla.org/en-US/)
@@ -254,4 +226,10 @@ To clone the website from within your IDE:
 * [Sandra Israel's Memory game process for inspiration](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-what-is-the-memory-game) 
 * Flip Cards based on [W3C flip card tutorial](https://www.w3schools.com/howto/howto_css_flip_card.asp)
 * [SVG Backgrounds](https://www.svgbackgrounds.com/) for free customisable SVG Backgrounds.
-* [CSS gradient generator](https://cssgradient.io/) -->
+* [CSS gradient generator](https://cssgradient.io/)
+* [Game reference](https://github.com/motazabdou/MS2-MemoryGame)
+
+## Authors
+* [Sejal Bansal](https://github.com/sejal-bansal)
+* [Carolina Liskey](https://github.com/carolinaliskey)
+* [Varshitha Bonguluru](https://github.com/Varshitha0)
