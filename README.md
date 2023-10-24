@@ -1,13 +1,10 @@
 # 8710 Project - Foundations of Software Engineering 
-<p style="font-family: 'Chiller', 'Times New Roman', serif; font-size: 30px; color: #ff4500; text-align: center; text-shadow: 2px 2px 4px #000000;">Witchy Pairings</p>
+<p style="text-align: center;">Witchy Pairings</p>
 
 [Link to Live Website](https://witchy-pairings.netlify.app)
 
-  
 
 [GitHub Repo](https://github.com/sejal-bansal/8710-project-game) 
-
-<!-- ***   -->
 
 ## Index – Table of Contents 
 
@@ -18,11 +15,9 @@
 * [User Stories](#user-stories)
 * [Features](#features) 
 * [Technologies Used](#technologies-used) 
+* [Testing](#testing) 
 * [Acknowledgements](#credits)
 * [Authors](#authors)
-
-<!-- *** -->
-
   
 
 ## About   
@@ -40,15 +35,19 @@ This is a simple Memory Game Web Application based on Halloween theme called "Wi
 *** 
 
 ## Instructions
-* Select the level of your choice (Easy, Medium, Hard)
+* Click on the level of your choice (Easy, Medium, Hard) to start the game
 
-* Start the game
+* Or Click on Start the game- it will start the initial level i.e Easy
 
-* Click on a card
+* Click on the blocks to reveal the image behind it. Do it to the remaining blocks and find the matching pair
 
 * Continue revealing cards and working your memory to remember each unveiled card.
 
 * Match cards properly with less moves and in faster time
+
+* You can reset the game using “Reset” button.
+
+* Check the time with the help of “Timer” at the top of the game
 
 ***
 
@@ -200,6 +199,28 @@ As a backup to using Chrome developer tools to check for responsiveness across m
 
 <!-- *** -->
 
+## Setup Instructions for Local:
+* Clone the repository
+Git clone git@github.com:sejal-bansal/8710-project-game.git
+* Change your current directory to the game's directory.
+* Open the index.html file using a web browser to play the game locally.
+
+
+## Deployment
+
+### Netlify
+
+To publish the website:
+
+* Install netlify using cli
+* Enter the command netlify login on terminal
+* It will take you to the netlify account, login using your github credentials
+* Select the repository to be deployed
+* Click on Deploy Site, Netlify will then pull the latest code from the selected branch and deploy it 
+* After deployment, a unique Netlify URL will be provided, such as https://witchy-pairings.netlify.app/.
+* Click on the link to access the deployed game 
+
+
 ## Credits
 
 * [W3C schools](https://www.w3schools.com/)
@@ -214,7 +235,34 @@ As a backup to using Chrome developer tools to check for responsiveness across m
 * [CSS gradient generator](https://cssgradient.io/)
 * [Game reference](https://github.com/motazabdou/MS2-MemoryGame)
 
+## Reflection:
+Creating the Matching Blocks game was a challenging yet rewarding experience that provided valuable insights into the world of game design and development. Throughout the process, I encountered various challenges, discovered what worked effectively, identified areas for improvement, and gained essential lessons that significantly enhanced my skills and understanding of game development.
+We managed our project using Agile methodology. Since not all team members are in the same physical location, we first established several channels of communications. Most of our meetings were dedicated to choosing the project and discussing design changes for the memory game we selected. 
+We used to have our stand up meetings every Monday at 6:00pm, where we discussed the progress of the game, the tasks assigned, any blocker issues, etc.
+
+## Challenges faced:
+* Selecting a game which is both easy to create and manage is our first challenge.
+* Balancing complexity and simplicity posed another challenge. Striking the right balance was crucial to ensure the game was easy to understand for players while offering a satisfying level of challenge.
+* We all live in different places which made it impossible to meet in-person and to discuss regularly.
+* Technical challenges also emerged during the development process. Implementing smooth animations, responsive touch controls, and efficient collision detection required careful coding and constant iteration.
+* Compatibility issues across different devices and operating systems demanded extensive testing and optimization, adding complexity to the development process.
+
+# What worked:
+* A key success factor was the iterative development approach. Starting with a basic prototype allowed for rapid experimentation and testing of various gameplay ideas. Feedback from playtesting sessions played a vital role in refining the mechanics and overall game experience. Iterative testing and feedback helped in identifying and rectifying issues early, ensuring a polished end product.
+* Conducting regular zoom calls to discuss the ideas and to implement them made it easier for everyone to follow the flow. Documenting every stage of the project and creating user stories gave us clarity regarding the work which has been done.
+* Additionally, establishing a clear art style and consistent visual design contributed significantly to the game's appeal. Creating visually appealing and cohesive graphics enhanced the overall player experience, making the game more engaging and immersive. The sound effects make the user feel the game while playing.
+What didn’t work:
+* One of the notable challenges was managing scope. Initially, the project aimed for a wide range of features, but it became apparent that some elements needed to be scaled back or postponed to ensure a timely release.
+* Learning to prioritize features and focus on the core gameplay mechanics would have streamlined the development process.
+* Our game is compatible across Google Chrome and Safari browser only. 
+
+## Lessons learned:
+* The development of the Matching Blocks game taught me several valuable lessons. Firstly, the importance of simplicity cannot be overstated. A straightforward and intuitive gameplay mechanic often leads to the most enjoyable games. Complexity should arise from mastering simple rules, providing depth without overwhelming players.
+* Effective planning and prioritization are essential. Establishing a clear roadmap, setting achievable milestones, and regularly reevaluating the project's scope are crucial for successful development. Moreover, incorporating player feedback early and often significantly improves the game. Players provide valuable insights that are vital for refining gameplay and addressing potential issues.
+* Lastly, the significance of adaptability and resilience cannot be overlooked. Unexpected challenges will inevitably arise during the development process. Adapting to unforeseen circumstances, being open to feedback, and embracing a willingness to iterate and improve are fundamental qualities that contribute to a successful game development journey.
+
+
 ## Authors
 * [Sejal Bansal](https://github.com/sejal-bansal)
 * [Carolina Liskey](https://github.com/carolinaliskey)
-* [Varshitha Bonguluru](https://github.com/Varshitha0)
+* [Varshitha Sanan](https://github.com/Varshitha0)
