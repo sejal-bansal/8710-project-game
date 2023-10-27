@@ -5,7 +5,7 @@ window.addEventListener("DOMContentLoaded", function() {
 const overlay = document.getElementById('darkeningOverlay');
     
     setInterval(() => {
-        // Toggle the flash class every 10 seconds (change as desired)
+        // Toggle the flash class every 10 seconds
         overlay.classList.toggle('flash');
     }, 5000);
   // array of images to be stored in the individual cards
@@ -211,6 +211,11 @@ const overlay = document.getElementById('darkeningOverlay');
         noMatch();
       }
     }
+
+    document.querySelector('.home-btn').addEventListener('click', function() {
+      window.location.href = 'index.html'; 
+    });
+
   
     // Create a function that checks if the two cards match, and keep the cards open if they do and applie class of match.
     function match() {

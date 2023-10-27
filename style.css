@@ -55,7 +55,7 @@ body {
 }
 
 .inner-container-home {
-  width: 70%;
+  width: 60%;
   height: auto;
   background: rgba(0,0,0,0.7);
   text-align: center;
@@ -92,8 +92,8 @@ h1::after {
 p {
     margin-bottom: 20px;
     font-size: 18px;
-    letter-spacing: 1.5px;  /* Increase spacing between letters for creepiness */
-    word-spacing: 2px;  /* Increase spacing between words */
+    letter-spacing: 1.5px;  
+    word-spacing: 2px; 
 }
 
 .home-img {
@@ -133,88 +133,61 @@ p {
     transition: all 0.3s ease-in-out;
 }
 
-.level {
-    display: inline-block;
-    background: linear-gradient(45deg, #f7b733, #fc4a1a);
-    color: #ffffff;
-    padding: 10px 20px;
-    border-radius: 30px;
-    border: none;
-    text-decoration: none; 
-    font-weight: bold;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;  
-    margin: 5px;  /* To give some space between the buttons */
-}
-
-.level:hover {
-    background: linear-gradient(45deg, #fc4a1a, #f7b733);
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
-}
-
 p::before, p::after {
-    content: '\f6c5';  /* FontAwesome Bat icon */
-    font-family: "Font Awesome 5 Pro";  /* Assuming you're using FontAwesome Pro */
+    content: '\f6c5';
+    font-family: "Font Awesome 5 Pro";  
     margin-right: 10px;
     margin-left: 10px;
     color: #FF5733;
 }
 
-
-/***** home.html *****/
-
-/*.Easy {
-  border-radius: 40px;
-  text-decoration: none;
-  background-image: url('images/halloween.jpg');
-  background-size: cover;
-  width: 200px;
-  margin: 20px auto;
-  border: none;
-  color: black;
-  background: rgb(226,99,32);
-  background: linear-gradient(0deg, rgba(232, 87, 9, 0.498) 0%, rgba(232, 87, 9, 0.498) 100%);
-  box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
-  padding: 12px;
-  cursor: pointer;
-  outline: none;
-  font-family: "Exo 2", sans-serif;
-  display: block;
-}*/
-/*
-.Medium {
-  border-radius: 40px;
-  text-decoration: none;
-  width: 200px;
-  margin: 20px auto;
-  border: none;
-  color: black;
-  background: rgb(226,99,32);
-  background: linear-gradient(0deg, rgba(232, 87, 9, 0.498) 0%, rgba(232, 87, 9, 0.498) 100%);
-  box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
-  padding: 12px;
-  cursor: pointer;
-  outline: none;
-  font-family: "Exo 2", sans-serif;
-  display: block;
+.level-selection {
+    display: flex;
+    justify-content: center;
+    margin: 2px 0;
+    gap: 15px;
 }
 
-.Hard {
-  border-radius: 40px;
-  text-decoration: none;
-  width: 200px;
-  margin: 20px auto;
-  border: none;
-  color: black;
-  background: rgb(231, 204, 6);
-  background: linear-gradient(0deg, rgba(151, 223, 7, 0.498) 0%, rgba(222, 212, 13, 0.498) 100%);
-  box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
-  padding: 12px;
-  cursor: pointer;
-  outline: none;
-  font-family: "Exo 2", sans-serif;
-  display: block;
-}*/
+.level-selection input[type="radio"] {
+    display: none; /* hide the radio buttons */
+}
+
+.level-selection label {
+    background-color: #333; 
+    color: #fff;
+    border: 2px solid #555;
+    padding: 10px 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    font-size: 1.2em; /* adjust as needed */
+    margin: 0;
+}
+
+.level-selection input[type="radio"]:checked + label {
+    background-color: #ff6600; 
+}
+
+.control-buttons .btn.home-btn {
+    background: linear-gradient(45deg, #f7b733, #fc4a1a); 
+    color: #ffffff;  
+    border-radius: 30px;
+    padding: 10px 20px; 
+    border: none; 
+    transition: all 0.3s ease;
+    margin-right: 10px; 
+    font-weight: bold;  
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  
+    font-size: 20px;
+}
+
+.control-buttons .btn.home-btn:hover {
+    background: linear-gradient(45deg, #fc4a1a, #f7b733);
+}
+
+.control-buttons .btn.home-btn i.fa-home {
+    color: #ffffff;
+}
 
 .Home-Heading {
   border-radius: 40px;
@@ -233,7 +206,6 @@ p::before, p::after {
   text-align: center;
  
 }
-
 
 #container {
   position: center;
@@ -283,8 +255,8 @@ header {
   grid-area: score-panel;
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: repeat(4, auto);
-  grid-template-areas: "star-rating moves timer-container reset-btn";
+  grid-template-columns: repeat(5, auto);
+  grid-template-areas: "home-btn star-rating moves timer-container reset-btn";
   width: 70%;
   justify-items: center;
   align-items: center;
@@ -328,7 +300,7 @@ header {
 
 .moves {
   grid-area: moves;
-  font-family: 'Chiller', cursive; /* Halloween inspired font */
+  font-family: 'Chiller', cursive; 
   color: #FF4500; /* Red-Orange */
   font-size: 30px;
   text-shadow: 2px 2px 4px #000;
@@ -357,7 +329,7 @@ header {
 
 .timer {
     font-family: 'Chiller', cursive; /* Halloween inspired font */
-    color: white; /* LimeGreen for timer text */
+    color: white;
     font-size: 30px;
     text-shadow: 2px 2px 4px #000;
 }
@@ -414,7 +386,7 @@ header {
 /*** Deck that contains cards ***/
 .deck {
   grid-area: deck;
-  background-color: rgba(219, 127, 13, 0.3);
+  background-color: rgba(219, 127, 13, 0.2);
   border-radius: 2em;
   display: grid;
   grid-template-columns:  repeat(auto-fill, minmax(100px, 1fr));
@@ -426,9 +398,9 @@ header {
   align-items: center;
   justify-items: center;
   height: 100%;
-  width: 70%;
-  max-width: 1200px;
-  grid-gap: 20px; /* Reduced grid-gap to bring cards closer */
+  width: 80%;
+  max-width: 1500px;
+  grid-gap: 20px;
   padding: 20px 40px 0 40px;
   box-sizing: border-box;
   margin: 30px auto;
@@ -441,7 +413,7 @@ header {
     box-shadow: 0 0 10px rgba(255, 165, 0, 0.7), 0 0 10px rgba(255, 165, 0, 0.7) inset;
   }
   50% {
-    transform: translateY(-20px);  /* Increased from -10px to -30px */
+    transform: translateY(-20px); 
     box-shadow: 0 5px 15px rgba(255, 165, 0, 0.7), 0 5px 15px rgba(255, 165, 0, 0.7) inset;
   }
 }
@@ -466,7 +438,7 @@ header {
   align-items: center;
   justify-items: center;
   box-shadow: 0 0 10px rgba(255, 165, 0, 0.7), 0 0 10px rgba(255, 165, 0, 0.7) inset; /* Orange glow for Halloween theme */
-  transition: all 0.3s ease; /* Smooth transition effect on hover */
+  transition: all 0.3s ease; 
   animation: float 3s infinite alternate;
   margin-bottom: 0;
 }
@@ -477,7 +449,7 @@ header {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 40%;
-  transform: scale(1.05) translateY(-5px); /* Slight enlargement and upward movement on hover for a spooky feel */
+  transform: scale(1.05) translateY(-5px); 
   box-shadow: 0 0 20px rgba(0, 255, 0, 0.8), 0 0 40px rgba(0, 255, 0, 0.8) inset; 
 }
 
@@ -497,7 +469,7 @@ border: none;
 }
 
 .flip img {
-background: #daf106; /*changed to yellow so card is visible */
+background: #daf106;
 visibility: visible;
 }
 
@@ -556,7 +528,7 @@ background: transparent;
   position: relative;
   background-image: url('images/game-win.jpeg');
   background-size: cover;       s
-  background-position: center;  /* Centers the background image */
+  background-position: center;  
   background-repeat: no-repeat; /
   background-color: rgba(0, 0, 0, 0.6); 
 
@@ -564,8 +536,8 @@ background: transparent;
 
 .modal h2, .modal p {
   font-family: 'Creepster', cursive;
-  color: #fc4; /* A spooky color */
-  text-shadow: 2px 2px 4px #000; /* Add shadow to the text */
+  color: #fc4;
+  text-shadow: 2px 2px 4px #000; 
   margin: 10px 0;
   text-align: center;
 }

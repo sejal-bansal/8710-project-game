@@ -1,10 +1,12 @@
 # 8710 Project - Foundations of Software Engineering 
-<p style="text-align: center;">Witchy Pairings</p>
+# Witchy Pairings
 
 [Link to Live Website](https://witchy-pairings.netlify.app)
 
-
 [GitHub Repo](https://github.com/sejal-bansal/8710-project-game) 
+
+[Game Reflection](https://github.com/sejal-bansal/8710-project-game/tree/master/reflection) 
+
 
 ## Index – Table of Contents 
 
@@ -16,11 +18,6 @@
 * [Technologies Used](#technologies-used) 
 * [Deployment](#testing) 
 * [Acknowledgements](#credits)
-* [Reflection](#reflection)
-* [Challenges Faced](#Challenges-Faced)
-* [What Worked](#What-Worked)
-* [What didn’t work](#What-didn’t-work)
-* [Lessons Learned](#Lessons-Learned)
 * [Authors](#authors)
   
 
@@ -40,19 +37,19 @@ This is a simple Memory Game Web Application based on Halloween theme called "Wi
 *** 
 
 ## Instructions
-* Click on the level of your choice (Easy, Medium, Hard) to start the game
+* Click on the level of your choice (Easy, Medium, Hard) to start the game.
 
-* Or Click on Start the game- it will start the initial level i.e Easy
-
-* Click on the blocks to reveal the image behind it. Do it to the remaining blocks and find the matching pair
+* Click on the blocks to reveal the image behind it. Do it to the remaining blocks and find the matching pair.
 
 * Continue revealing cards and working your memory to remember each unveiled card.
 
-* Match cards properly with less moves and in faster time
+* Match cards properly with less moves and in faster time.
 
 * You can reset the game using “Reset” button.
 
-* Check the time with the help of “Timer” at the top of the game
+* Check the time with the help of “Timer” at the top of the game.
+
+* You can go to the home page with the help of home button.
 
 ***
 
@@ -248,7 +245,7 @@ To publish the website:
 * [CSS gradient generator](https://cssgradient.io/)
 * [Game reference](https://github.com/motazabdou/MS2-MemoryGame)
 
-## Reflection:
+<!-- ## Reflection:
 Creating the Matching Blocks game was a challenging yet rewarding experience that provided valuable insights into the world of game design and development. Throughout the process, I encountered various challenges, discovered what worked effectively, identified areas for improvement, and gained essential lessons that significantly enhanced my skills and understanding of game development.
 We managed our project using Agile methodology. Since not all team members are in the same physical location, we first established several channels of communications. Most of our meetings were dedicated to choosing the project and discussing design changes for the memory game we selected. 
 We used to have our stand up meetings every Monday at 6:00pm, where we discussed the progress of the game, the tasks assigned, any blocker issues, etc.
@@ -273,7 +270,7 @@ We used to have our stand up meetings every Monday at 6:00pm, where we discussed
 * The development of the Matching Blocks game taught me several valuable lessons. Firstly, the importance of simplicity cannot be overstated. A straightforward and intuitive gameplay mechanic often leads to the most enjoyable games. Complexity should arise from mastering simple rules, providing depth without overwhelming players.
 * Effective planning and prioritization are essential. Establishing a clear roadmap, setting achievable milestones, and regularly reevaluating the project's scope are crucial for successful development. Moreover, incorporating player feedback early and often significantly improves the game. Players provide valuable insights that are vital for refining gameplay and addressing potential issues.
 * Lastly, the significance of adaptability and resilience cannot be overlooked. Unexpected challenges will inevitably arise during the development process. Adapting to unforeseen circumstances, being open to feedback, and embracing a willingness to iterate and improve are fundamental qualities that contribute to a successful game development journey.
-
+ -->
 
 ## Authors
 * [Sejal Bansal](https://github.com/sejal-bansal)

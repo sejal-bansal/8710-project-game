@@ -16,26 +16,38 @@
 <body>
 
     <div class="outer-container-home">
-    <div class="inner-container-home">
-        <h1>Witchy Pairings</h1>
-        <h2>How To Play</h2>
-        <img class="home-img" src="images/skeleton-bg.png" alt="image of a skeleton">
-        <p>- You've entered a haunted mansion.</p>
-        <p>- There are three levels in the game.</p>
+        <div class="inner-container-home">
+            <h1>Witchy Pairings</h1>
+            <h2>How To Play</h2>
+            <img class="home-img" src="images/skeleton-bg.png" alt="image of a skeleton">
+            <p>- You've entered a haunted mansion💀</p>
+            <p>- There are three levels in the game.</p>
 
-        <!-- Added buttons -->
-        <div class="level-buttons">
-            <button class="level" onclick="location.href='easy.html'">Easy</button>
-            <button class="level" onclick="location.href='medium.html'">Medium</button>
-            <button class="level" onclick="location.href='hard.html'">Hard</button>
+            <!-- Radio buttons -->
+            <div class="level-selection">
+                <input type="radio" id="easy" name="difficulty" value="easy.html" checked>
+                <label for="easy">Easy</label><br>
 
+                <input type="radio" id="medium" name="difficulty" value="medium.html">
+                <label for="medium">Medium</label><br>
+
+                <input type="radio" id="hard" name="difficulty" value="hard.html">
+                <label for="hard">Hard</label>
+            </div>
+            <p>- The only way out is to match the haunted objects before the spirits catch you.</p>
+            <p>- Match all the pairs of cards in as few moves and as little time as possible to win the game. </p>
+            <a class="start" href="#" onclick="startGame()">Start Game</a>
         </div>
-        <p>- The only way out is to match the haunted objects before the spirits catch you.</p>
-        <p>- Match all the pairs of cards in as few moves and as little time as possible to win the game.</p>
-        <a class="start" href="easy.html">Start Game</a>
     </div>
-</div>
-
-    
+    <script>
+        function startGame() {
+            // Select the difficulty
+            let selectedDifficulty = document.querySelector('input[name="difficulty"]:checked').value;
+            
+            // Redirect to the corresponding page
+            window.location.href = selectedDifficulty;
+        }
+    </script>
+        
 </body>
 </html>
