@@ -275,4 +275,4 @@ We used to have our stand up meetings every Monday at 6:00pm, where we discussed
 ## Authors
 * [Sejal Bansal](https://github.com/sejal-bansal)
 * [Carolina Liskey](https://github.com/carolinaliskey)
-* [Varshitha Sanan](https://github.com/Varshitha0)
+* [Varshitha Bonguluru](https://github.com/Varshitha01)
